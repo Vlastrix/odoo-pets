@@ -1,0 +1,21 @@
+<odoo>
+    <record id="view_form_pet_species" model="ir.ui.view">
+        <field name="name">pet.species.form</field>
+        <field name="model">pet.species</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <br/>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="breed_ids"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

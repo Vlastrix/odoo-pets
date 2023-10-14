@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_tree_pet">
+      <field name="name">Pet List</field>
+      <field name="model">pet.pet</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="age" optional="hide"/>
+          <field name="species_id" widget="badge"/>
+          <field name="breed_id" widget="badge"/>
+        </tree>
+      </field>
+    </record>
+</odoo>

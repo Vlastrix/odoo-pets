@@ -1,0 +1,31 @@
+<odoo>
+    <record id="view_form_pet" model="ir.ui.view">
+        <field name="name">pet.pet.form</field>
+        <field name="model">pet.pet</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <field name="profile_pic" widget="image" class="oe_avatar" options="{'preview_image': 'profile_pic'}"/>
+                    <div class="oe_title mb24">
+                        <h1>
+                            <field class="text-break" name="name" default_focus="1"
+                                   placeholder="e.g. Abby"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="species_id" required="True"/>
+                            <field name="breed_id" domain="[('species_id','=',species_id)]"/>
+                            <field name="birth_date"/>
+                        </group>
+                        <group>
+                            <field name="age"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

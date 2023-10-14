@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_search_pet" model="ir.ui.view">
+        <field name="name">pet.pet.search</field>
+        <field name="model">pet.pet</field>
+        <field name="arch" type="xml">
+            <search string="Pets">
+                <field name="name" string="Name"/>
+                <field name="species_id" string="Species"/>
+                <field name="breed_id" string="Breed"/>
+            </search>
+        </field>
+    </record>
+</odoo>
