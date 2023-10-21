@@ -8,6 +8,7 @@
         <tree>
           <field name="name"/>
           <field name="age" optional="hide"/>
+          <field name="work_location_id" widget="badge"/>
           <field name="species_id" widget="badge"/>
           <field name="breed_id" widget="badge"/>
         </tree>

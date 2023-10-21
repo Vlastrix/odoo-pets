@@ -10,9 +10,7 @@
                 <group name="location_group" position="after">
                     <field name="pets_ids"/>
                 </group>
-
             </sheet>
-
         </field>
     </record>
 </odoo>
