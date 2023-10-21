@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+  <data>
     <record model="ir.ui.view" id="view_tree_pet">
       <field name="name">Pet List</field>
       <field name="model">pet.pet</field>
@@ -12,4 +13,6 @@
         </tree>
       </field>
     </record>
+  </data>
+
 </odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_tree_hr_work_location">
+            <field name="name">HR Work Location</field>
+            <field name="model">hr.work.location</field>
+            <field name="inherit_id" ref="hr.hr_work_location_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="address_id" position="after">
+                    <field name="pets_ids" widget="many2many_tags"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

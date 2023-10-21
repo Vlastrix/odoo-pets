@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <odoo>
     <record id="view_form_pet_species" model="ir.ui.view">
         <field name="name">pet.species.form</field>
@@ -7,10 +9,14 @@
                 <header>
                 </header>
                 <sheet>
-                    <br/>
+                    <div class="oe_title mb24">
+                        <h1>
+                            <field class="text-break" name="name" default_focus="1"
+                                   placeholder="e.g. Cat"/>
+                        </h1>
+                    </div>
                     <group>
                         <group>
-                            <field name="name"/>
                             <field name="breed_ids"/>
                         </group>
                     </group>

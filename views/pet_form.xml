@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <odoo>
     <record id="view_form_pet" model="ir.ui.view">
         <field name="name">pet.pet.form</field>
@@ -7,7 +9,8 @@
                 <header>
                 </header>
                 <sheet>
-                    <field name="profile_pic" widget="image" class="oe_avatar" options="{'preview_image': 'profile_pic'}"/>
+                    <field name="profile_pic" widget="image" class="oe_avatar"
+                           options="{'preview_image': 'profile_pic'}"/>
                     <div class="oe_title mb24">
                         <h1>
                             <field class="text-break" name="name" default_focus="1"
@@ -19,12 +22,18 @@
                             <field name="species_id" required="True"/>
                             <field name="breed_id" domain="[('species_id','=',species_id)]"/>
                             <field name="birth_date"/>
+                            <field name="work_location_id" options="{'no_create': True}"/>
                         </group>
                         <group>
                             <field name="age"/>
                         </group>
                     </group>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids" colspan="4" nolabel="1"/>
+                    <field name="activity_ids"/>
+                </div>
             </form>
         </field>
     </record>

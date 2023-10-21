@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_tree_species">
+      <field name="name">Pet Species List</field>
+      <field name="model">pet.species</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="breed_ids" widget="many2many_tags"/>
+        </tree>
+      </field>
+    </record>
+</odoo>

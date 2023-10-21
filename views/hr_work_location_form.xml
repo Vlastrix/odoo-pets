@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <record id="view_form_hr_work_location" model="ir.ui.view">
+        <field name="name">HR Work Location</field>
+        <field name="model">hr.work.location</field>
+        <field name="inherit_id" ref="hr.hr_work_location_form_view"/>
+        <field name="arch" type="xml">
+            <sheet>
+                <group name="location_group" position="after">
+                    <field name="pets_ids"/>
+                </group>
+
+            </sheet>
+
+        </field>
+    </record>
+</odoo>
