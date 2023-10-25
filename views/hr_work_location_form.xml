@@ -6,11 +6,23 @@
         <field name="model">hr.work.location</field>
         <field name="inherit_id" ref="hr.hr_work_location_form_view"/>
         <field name="arch" type="xml">
-            <sheet>
-                <group name="location_group" position="after">
-                    <field name="pets_ids"/>
-                </group>
-            </sheet>
+            <xpath expr="//group//group" position="after">
+                <notebook>
+                    <page id="pet_tab"
+                          name="pet_tab"
+                          string="Pets">
+                        <field name="pets_ids">
+                            <tree editable="bottom" string="Pets">
+                                <field name="name"/>
+                                <field name="age" optional="hide"/>
+                                <field name="work_location_id"/>
+                                <field name="species_id"/>
+                                <field name="breed_id"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath>
         </field>
     </record>
 </odoo>

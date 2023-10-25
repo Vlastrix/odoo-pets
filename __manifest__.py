@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "odoo-pets",
+    'name': "odoo_pets",
 
     'summary': """
         Manage and monitor office pets for a harmonious workplace.
@@ -36,9 +36,8 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
         'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
         'views/pet_tree.xml',
         'views/pet_form.xml',
         'views/pet_kanban.xml',

@@ -15,11 +15,19 @@
                                    placeholder="e.g. Cat"/>
                         </h1>
                     </div>
-                    <group>
-                        <group>
-                            <field name="breed_ids"/>
-                        </group>
-                    </group>
+                    <notebook>
+                        <page id="breed_tab"
+                              name="breed_tab"
+                              string="Breed">
+                            <field name="breed_ids"
+                                   widget="section_and_note_one2many"
+                                   mode="tree,kanban">
+                                <tree editable="bottom" string="Breed">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 <!--
-    <record model="ir.ui.view" id="odoo-pets.list">
-      <field name="name">odoo-pets list</field>
-      <field name="model">odoo-pets.odoo-pets</field>
+    <record model="ir.ui.view" id="odoo_pets.list">
+      <field name="name">odoo_pets list</field>
+      <field name="model">odoo_pets.odoo_pets</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,19 +17,19 @@
 
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="odoo-pets.action_window_pet">
+    <record model="ir.actions.act_window" id="odoo_pets.action_window_pet">
       <field name="name">Pets</field>
       <field name="res_model">pet.pet</field>
       <field name="view_mode">tree,form,kanban</field>
     </record>
 
-    <record model="ir.actions.act_window" id="odoo-pets.action_window_pet_species">
+    <record model="ir.actions.act_window" id="odoo_pets.action_window_pet_species">
       <field name="name">Species</field>
       <field name="res_model">pet.species</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <record model="ir.actions.act_window" id="odoo-pets.action_window_pet_species_breed">
+    <record model="ir.actions.act_window" id="odoo_pets.action_window_pet_species_breed">
       <field name="name">Breed</field>
       <field name="res_model">pet.species.breed</field>
       <field name="view_mode">tree,form</field>
@@ -40,9 +40,9 @@
 
     <!-- server action to the one above -->
 <!--
-    <record model="ir.actions.server" id="odoo-pets.action_server">
-      <field name="name">odoo-pets server</field>
-      <field name="model_id" ref="model_odoo-pets_odoo-pets"/>
+    <record model="ir.actions.server" id="odoo_pets.action_server">
+      <field name="name">odoo_pets server</field>
+      <field name="model_id" ref="model_odoo_pets_odoo_pets"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -56,23 +56,23 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="Pets" id="odoo-pets.pet_menu_root"/>
+    <menuitem name="Pets" id="odoo_pets.pet_menu_root"/>
 
     <!-- menu categories -->
 
-    <menuitem name="Pets" id="odoo-pets.pet_menu_category" parent="odoo-pets.pet_menu_root"/>
-<!--    <menuitem name="Species" id="odoo-pets.pet_species_menu_item" parent="odoo-pets.pet_menu_root"/>-->
-<!--    <menuitem name="Breeds" id="odoo-pets.pet_species_breed_menu_item" parent="odoo-pets.pet_menu_root"/>-->
+    <menuitem name="Pets" id="odoo_pets.pet_menu_category" parent="odoo_pets.pet_menu_root"/>
+<!--    <menuitem name="Species" id="odoo_pets.pet_species_menu_item" parent="odoo_pets.pet_menu_root"/>-->
+<!--    <menuitem name="Breeds" id="odoo_pets.pet_species_breed_menu_item" parent="odoo_pets.pet_menu_root"/>-->
 
 
     <!-- actions -->
 
-    <menuitem name="Pets" id="odoo-pets.pet_menu_item" parent="odoo-pets.pet_menu_category"
-              action="odoo-pets.action_window_pet"/>
-    <menuitem name="Species" id="odoo-pets.pet_species_menu_item" parent="odoo-pets.pet_menu_category"
-              action="odoo-pets.action_window_pet_species"/>
-    <menuitem name="Breeds" id="odoo-pets.pet_species_breed_menu_item" parent="odoo-pets.pet_menu_category"
-              action="odoo-pets.action_window_pet_species_breed"/>
+    <menuitem name="Pets" id="odoo_pets.pet_menu_item" parent="odoo_pets.pet_menu_category"
+              action="odoo_pets.action_window_pet"/>
+    <menuitem name="Species" id="odoo_pets.pet_species_menu_item" parent="odoo_pets.pet_menu_category"
+              action="odoo_pets.action_window_pet_species"/>
+    <menuitem name="Breeds" id="odoo_pets.pet_species_breed_menu_item" parent="odoo_pets.pet_menu_category"
+              action="odoo_pets.action_window_pet_species_breed"/>
 
   </data>
 </odoo>

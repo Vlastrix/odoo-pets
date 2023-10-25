@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields
-from datetime import datetime, date
+from dateutil.relativedelta import relativedelta
+from datetime import datetime
+
 
 class Pet(models.Model):
     _name = 'pet.pet'
@@ -9,16 +11,12 @@ class Pet(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
     def _compute_age(self):
-        for pet in self:
-            if pet.birth_date:
-                birth_date_str = str(pet.birth_date)
-                birth_date = datetime.strptime(birth_date_str, '%Y-%m-%d').date()
-                current_date = fields.Date.today()
-                age_in_days = (current_date - birth_date).days
-                age_in_years = age_in_days / 365
-                pet.age = age_in_years
-            else:
-                pet.age = 0.0
+        for record in self:
+            relativedelta_age = relativedelta(datetime.now(), record.birth_date)
+            years_age = relativedelta_age.years
+            months_age = relativedelta_age.months
+            days_age = relativedelta_age.days
+            record.age = years_age + months_age / 12 + days_age / 365
 
     profile_pic = fields.Image(string="Profile Pic")
     name = fields.Char(string="Name", required=True)

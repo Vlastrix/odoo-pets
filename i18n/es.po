@@ -1,0 +1,113 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_pets
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-24 21:06+0000\n"
+"PO-Revision-Date: 2023-10-24 21:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__birth_date
+msgid "Birth Date"
+msgstr "Fecha de Nacimiento"
+
+#. module: odoo_pets
+#: model:ir.actions.act_window,name:odoo_pets.action_window_pet_species_breed
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__breed_id
+#: model_terms:ir.ui.view,arch_db:odoo_pets.view_search_pet
+msgid "Breed"
+msgstr "Raza"
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species__breed_ids
+#: model:ir.ui.menu,name:odoo_pets.pet_species_breed_menu_item
+msgid "Breeds"
+msgstr "Razas"
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__create_uid
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species__create_uid
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species_breed__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__create_date
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species__create_date
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species_breed__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__name
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species__name
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species_breed__name
+#: model_terms:ir.ui.view,arch_db:odoo_pets.view_search_pet
+msgid "Name"
+msgstr "Nombre"
+
+#. module: odoo_pets
+#: model:ir.model,name:odoo_pets.model_pet_pet
+msgid "Pet"
+msgstr "Mascota"
+
+#. module: odoo_pets
+#: model:ir.model,name:odoo_pets.model_pet_species
+msgid "Pet Species"
+msgstr "Especies"
+
+#. module: odoo_pets
+#: model:ir.model,name:odoo_pets.model_pet_species_breed
+msgid "Pet Species Breed"
+msgstr "Razas"
+
+#. module: odoo_pets
+#: model:ir.actions.act_window,name:odoo_pets.action_window_pet
+#: model:ir.model.fields,field_description:odoo_pets.field_hr_work_location__pets_ids
+#: model:ir.ui.menu,name:odoo_pets.pet_menu_category
+#: model:ir.ui.menu,name:odoo_pets.pet_menu_item
+#: model:ir.ui.menu,name:odoo_pets.pet_menu_root
+#: model_terms:ir.ui.view,arch_db:odoo_pets.view_search_pet
+msgid "Pets"
+msgstr "Mascotas"
+
+#. module: odoo_pets
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__profile_pic
+msgid "Profile Pic"
+msgstr "Foto de Perfil"
+
+#. module: odoo_pets
+#: model:ir.actions.act_window,name:odoo_pets.action_window_pet_species
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__species_id
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_species_breed__species_id
+#: model:ir.ui.menu,name:odoo_pets.pet_species_menu_item
+#: model_terms:ir.ui.view,arch_db:odoo_pets.view_search_pet
+msgid "Species"
+msgstr "Especies"
+
+
+#. module: odoo_pets
+#: model:ir.model,name:odoo_pets.model_hr_work_location
+#: model:ir.model.fields,field_description:odoo_pets.field_pet_pet__work_location_id
+msgid "Work Location"
+msgstr "Centro de trabajo"
+

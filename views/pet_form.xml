@@ -21,10 +21,10 @@
                         <group>
                             <field name="species_id" required="True"/>
                             <field name="breed_id" domain="[('species_id','=',species_id)]"/>
-                            <field name="birth_date"/>
                             <field name="work_location_id" options="{'no_create': True}"/>
                         </group>
                         <group>
+                            <field name="birth_date"/>
                             <field name="age"/>
                         </group>
                     </group>
